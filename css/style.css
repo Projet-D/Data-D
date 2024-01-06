@@ -741,6 +741,6 @@ footer .container p {
     opacity: 0;
   }
   .nothing {
-  font-size: 10000000px;
-}
+height: 100vh;
+text-align: center;
 }
