@@ -95,10 +95,37 @@
   </div>
 
   <div class="gamesAll">
-    <h2 class="category" id="logiciel__all">Logiciels ajoutés récemment</h2>
-    <div class="logiciels">
 
-
+      <div class="card" id="rookieside" style="cursor: pointer" onclick="openModal('rookieside', 'https://wiki.vrpirates.club/downloads/rookie/rookie_2.26_portable.zip')">
+        <img src="https://i.redd.it/9o9b0hss9isa1.png" alt="House Flipper 2" class="card-img-top" />
+        <div class="card-body">
+          <h4 class="card-title">Rookie sideloader/h4>
+        </div>
+      </div>
+      
+      <div class="modal fade" id="modal-rookieside" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document" style="display: flex; align-items: center; height: 80vh;">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Rookie sideloader</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeModal('rookieside')" style="border: none; background:transparent; color: white;">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              This app will automatically download and install<br>
+               Quest games. If for any reason this app is not <br>
+               working for you, it's always antivirus. Just kidding<br>
+                (not really), but we have other apps you should have<br>
+                 installed as a back up.
+            </div>
+            <div class="modal-footer">
+              
+              <a class="btn btn-success" type="button" href="https://wiki.vrpirates.club/downloads/rookie/rookie_2.26_portable.zip">Download</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
       <div class="card" id="houseflipper2" style="cursor: pointer" onclick="openModal('houseflipper2', 'https://dodi-repacks.site/house-flipper-2/')">
