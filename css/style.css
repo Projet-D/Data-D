@@ -32,6 +32,10 @@ body {
   opacity: 0.8;
   transition: opacity 0.5s ease;
 }
+  .code {
+font-size: 99999px;
+text-align: center;
+}
 
 .hidden {
   display: none !important;
@@ -740,8 +744,5 @@ footer .container p {
     transform: translateY(100%);
     opacity: 0;
   }
-  .nothing {
-font-size : 99999px;
-text-align: center;
-}
+
 }
