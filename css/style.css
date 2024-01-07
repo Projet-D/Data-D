@@ -68,13 +68,13 @@ body {
   display: flex;
   justify-content: center;
 }
-.searchforfiles {
+.searchforgames {
   background-color: var(--accent-color) !important;
   max-width: 350px;
   padding: 10px;
   margin: 30px;
 }
-.searchforfiles::placeholder {
+.searchforgames::placeholder {
   color: white !important;
 }
 
@@ -108,9 +108,9 @@ body {
 }
 
 .logiciels,
-.cracks_files,
+.cracks_games,
 .category,
-.files {
+.games {
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
