@@ -31,6 +31,9 @@ body {
   opacity: 0.8;
   transition: opacity 0.5s ease;
 }
+   a {
+  color: #ECE6E4;
+}
   .codeerreur {
 font-size: 10.2rem;
 text-align: center;
