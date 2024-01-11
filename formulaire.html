@@ -77,17 +77,17 @@
   <li id="squa"></li>
   <li id="squa"></li>
 </ul>
-  </div>
+  <div>
 
   <body class="container mt-5">
     <form onsubmit="sendContact(event)">
       <div class="mb-3">
         <label for="emailInput" class="form-label">Enter your email address</label>
-        <input type="email" class="form-control" id="emailInput">
+        <input type="email" class="form-control" id="emailInput required="required"">
       </div>
       <div class="mb-3">
         <label for="messageInput" class="form-label">Enter your message</label>
-        <textarea class="form-control" id="messageInput" rows="3"></textarea>
+        <textarea class="form-control" id="messageInput" rows="3" required="required"></textarea>
       </div>
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
