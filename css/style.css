@@ -350,7 +350,7 @@ lsignikanegative {
 .form-control,
 .form-control:focus,
 .form-control:active {
-  background-color: var(--form-control);
+  background-color: #202A34;
   color: var(--text-color) !important;
   border: none;
   border-radius: 5px;
