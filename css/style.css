@@ -229,7 +229,7 @@ text-align: center;
   width: 20px;
   height: 20px;
   background: #212b35;
-  border-radius: 100%;
+  border-radius: 0%;
   animation: animate 25s linear infinite;
   bottom: -150px;
 }
