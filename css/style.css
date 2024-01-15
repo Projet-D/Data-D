@@ -231,6 +231,7 @@ text-align: center;
   background: #212b35;
   animation: animate 25s linear infinite;
   bottom: -150px;
+  border-radius: 50%;
 }
 
 .square #squa:nth-child(1) {
