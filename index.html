@@ -11,65 +11,40 @@
   <meta name="theme-color" content="#00060a"/>
   <link rel="icon" href="img/logo1.png" />
   
-  <link
-    href="cdn.jsdelivr.net/npm/bootstrap%405.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-  <link
-    href="getbootstrap.com/docs/5.3/assets/css/docs.css"
-    rel="stylesheet"
-  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="css/style.css" />
-
-  
 </head>
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">
-      <img
-        class="navbar-img"
-        src="img/logo.png"
-        alt="logo"
-        width="130"
-        height="80"
-      />
-    </a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Projet D</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="files.html">Files</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="form.html">Form</a>
-        </li>
-
-        
-        <li class="nav-item dropdown">
-        
-        </a>
-        
-      </form>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img class="navbar-img" src="img/logo.png" alt="logo" width="130" height="80" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Projet D</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="files.html">Files</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="form.html">Form</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <!-- Vous pouvez ajouter ici d'autres éléments de navigation si nécessaire -->
+        </form>
+      </div>
     </div>
-  </div>
-</nav>
-
-<div id="loader"></div>
+  </nav>
+  
+  <div id="loader"></div>
   <ul class="square">
   <li id="squa"></li>
   <li id="squa"></li>
@@ -83,27 +58,53 @@
   <li id="squa"></li>
 </ul>
 
+  <main class="mx-3">
+    <div class="infos">
+      <div class="link">
+        <h1>Data D</h1>
+        <h1>᠌᠌</h1>
+        <p>Data D est un chercheur de<br> fichiers performant qui a tout !<br>
+         Jeux, logiciels utiles, rom et<br> bien plus encore ! Ce qui le <br>
+         différencie des autres ?<br>
+        Sa simplicité d'utilisation et<br> l'amour que son créateur lui<br>
+     apporte. Découvre dès maintenant<br> Data D et laisse-toi surprendre<br>
+      par ses fonctionnalités incroyables<br>
+       et son interface agréable ! </p>
+      </div>
+      <iframe src="https://discord.com/widget?id=1009917716653678722&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    </div>
+  </main>
 
-        <main class="mx-3">
-          <div class="infos">
-            <div class="link">
-              <h1>Data D</h1>
-              <h1>᠌᠌</h1>
-              <p>Data D is a handy database where people can <br>
-                search for the files they want. It's really <br> 
-                great for quickly finding what you need!</p>
-              
-              </div>
-            <iframe src="https://discord.com/widget?id=1009917716653678722&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-          </div>
-      
-          </section>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>Heure actuelle : <span id="heureActuelle"></span></p>
+          <p>Pays de connexion : <span id="pays"></span></p>
+          <h4>Data D | Tout droit doit être réservé.</h4>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-        </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/15198d5ddf.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/script.js"></script>
+  
+  <script>
+    const date = new Date();
+    const heure = date.getHours();
+    const minutes = date.getMinutes();
+    const heureActuelle = heure + ":" + minutes;
+    document.getElementById("heureActuelle").textContent = heureActuelle;
 
-        <script src="cdn.jsdelivr.net/npm/bootstrap%405.3.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="kit.fontawesome.com/15198d5ddf.js" crossorigin="anonymous"></script>
-        <script src="code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="js/script.js"></script>
-  </body>
+    fetch('https://api.ipgeolocation.io/ipgeo?apiKey=2f62041d1a514dabaebfe5a67fa8ad97')
+      .then(response => response.json())
+      .then(data => {
+        const pays = data.country_name;
+        document.getElementById("pays").textContent = pays;
+      });
+  </script>
+</body>
 </html>
