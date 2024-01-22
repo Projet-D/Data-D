@@ -627,6 +627,7 @@ lsignikanegative {
 }
 
 footer {
+  margin: 0;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -655,6 +656,7 @@ footer .container p {
   }
 
   footer {
+    margin: 0;
     position: relative;
     bottom: 0;
     width: 100%;
