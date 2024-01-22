@@ -94,6 +94,19 @@
       </div>
       <center><button type="submit" class="btn btn-primary">Submit</button></center>
     </form>
+    
+      <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>Heure actuelle : <span id="heureActuelle"></span></p>
+          <p>Pays de connexion : <span id="pays"></span></p>
+          <h5>Data D | Tout droit doit être réservé.</h5>
+        </div>
+      </div>
+    </div>
+  </footer>
+    
     <script>
       async function sendContact(ev) {
         ev.preventDefault();
@@ -130,6 +143,21 @@
         }
       }
     </script>
+    
+  <script>
+    const date = new Date();
+    const heure = date.getHours();
+    const minutes = date.getMinutes();
+    const heureActuelle = heure + ":" + minutes;
+    document.getElementById("heureActuelle").textContent = heureActuelle;
+
+    fetch('https://api.ipgeolocation.io/ipgeo?apiKey=2f62041d1a514dabaebfe5a67fa8ad97')
+      .then(response => response.json())
+      .then(data => {
+        const pays = data.country_name;
+        document.getElementById("pays").textContent = pays;
+      });
+  </script>
   </body>
       
           </section>
