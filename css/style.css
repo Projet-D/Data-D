@@ -439,6 +439,7 @@ lsignikanegative {
   width: 100%;
   margin: 10px 0;
   padding: 0;
+  margin-bottom: 20px;
 }
 
 .select-btn {
@@ -628,13 +629,14 @@ lsignikanegative {
 
 footer {
   margin: 0;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   width: 100%;
   background-color: var(--accent-color) !important;
   display: flex;
   justify-content: center;
   align-items: center;
+  left: 0;
 }
 
 footer .container p {
