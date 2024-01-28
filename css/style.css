@@ -29,6 +29,7 @@ text-align: center;
 
 .hidden {
   display: none !important;
+  visibility: hidden;
 }
 
 .infos {
