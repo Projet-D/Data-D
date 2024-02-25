@@ -1,0 +1,205 @@
+ <!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Data D / Projet D</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Discover a treasure trove of files with our powerful file seeker! Find ROMs, useful software, games, and more. Unleash the ultimate file-hunting experience!" />
+  <meta name="keywords" content="Jeux, Data D, Data, D, Fichiers, chercheur, chercheur de fichiers, films, logiciels, photo, tuto, Projet D, Projet, musiques, code, source, code source, support, a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z" />
+  <meta name="author" content="Data D" />
+  <meta name="title" content="Data D" />
+  <meta name="theme-color" content="#00060a"/>
+  <link rel="icon" href="img/logo1.png" />
+  
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-THHCPRW3');</script>
+  <!-- End Google Tag Manager -->
+
+  <link
+  href="cdn.jsdelivr.net/npm/bootstrap%405.3.0/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+/>
+<link
+  href="getbootstrap.com/docs/5.3/assets/css/docs.css"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+ 
+</head>
+
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-THHCPRW3"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+<div class="container-fluid">
+  <a class="navbar-brand" href="index.html">
+    <img
+      class="navbar-img"
+      src="img/logo.png"
+      alt="logo"
+      width="130"
+      height="80"
+    />
+  </a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="index.html">Projet D</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="files.html">Files</a>
+      </li>
+     <li class="nav-item">
+          <a class="nav-link" href="form.html">Form</a>
+        </li>
+
+      
+      <li class="nav-item dropdown">
+      
+      </a>
+      
+    </form>
+  </div>
+</div>
+</nav>
+ 
+ <ul class="square">
+  <li id="squa"></li>
+  <li id="squa"></li>
+  <li id="squa"></li>
+  <li id="squa"></li>
+  <li id="squa"></li>
+  <li id="squa"></li>
+  <li id="squa"></li>
+  <li id="squa"></li>
+  <li id="squa"></li>
+  <li id="squa"></li>
+</ul>
+
+    <div class="search">
+      <div class="search_byname"><h3>Looking for a file?</h3></div>
+      <div class="searchcontainer">
+        <input
+          class="searchforgames form-control"
+          type="text"
+          id="searchInput"
+          placeholder="Search.."
+        />
+    </div>
+  </div>
+<center> <p id="resultat"></p></center>
+<center><h3>Dead link, missing photo or a fil suggestion ? Fill the <a href="form.html">form</a>.</h3></center>
+<p>A large part of the games do not work, please report the game to have it.</p>
+  <div class="gamesAll">
+    <h2 class="category" id="logiciel__all">Fichiers</h2>
+    <div class="logiciels">
+
+      
+
+
+<a href="https://1fichier.com/?nfxkiwtv5crxudzmzosh" download>
+  <img src="httpsi.etsystatic.com/49161657/r/il/e7a219/5643164778/il_794xN.5643164778_kwcf.jpg" alt="Alan Wake 2" class="card-img-top" />
+</a>
+
+<div class="card-body">
+  <h4 class="card-title">Alan Wake 2</h4>
+  <p>Alan wake description</p>
+</div>
+
+  
+      
+          
+          <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>Heure actuelle : <span id="heureActuelle"></span></p>
+          <h5>Data D | Tout droit doit être réservé.</h5>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+        </div>
+      
+    <script src="cdn.jsdelivr.net/npm/bootstrap%405.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="kit.fontawesome.com/15198d5ddf.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="http://afarkas.github.io/lazysizes/lazysizes.min.js" async=""></script>
+    
+<script>
+  function openModal(gameName, gameUrl) {
+    $("#modal-" + gameName.replace(/\s+/g, "").replace(/[^\w\s]/gi, "")).modal("show");
+  }
+
+  function closeModal(gameName) {
+    $("#modal-" + gameName.replace(/\s+/g, "").replace(/[^\w\s]/gi, "")).modal("hide");
+  }
+</script>
+
+<script>
+  function openModal(gameName, gameUrl) {
+    $("#modal-" + gameName.replace(/\s+/g, "").replace(/[^\w\s]/gi, "")).modal("show");
+  }
+
+  function closeModal(gameName) {
+    $("#modal-" + gameName.replace(/\s+/g, "").replace(/[^\w\s]/gi, "")).modal("hide");
+  }
+</script>
+<script>
+  const date = new Date();
+  const heure = date.getHours();
+  const minutes = date.getMinutes();
+  const heureActuelle = heure + ":" + minutes;
+  document.getElementById("heureActuelle").textContent = heureActuelle;
+
+  fetch('https://api.ipgeolocation.io/ipgeo?apiKey=2f62041d1a514dabaebfe5a67fa8ad97')
+    .then(response => response.json())
+    .then(data => {
+      const pays = data.country_name;
+      document.getElementById("pays").textContent = pays;
+    });
+</script>
+ <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var mot = "modal-footer";
+      var texte = document.documentElement.innerHTML;
+      var regex = new RegExp("\\b" + mot + "\\b", "gi");
+      var compteur = (texte.match(regex) || []).length;
+      document.getElementById("resultat").innerHTML = "There is currently " + compteur + " files.";
+    });
+  </script>
+
+
+  </body>
+
+</html>
+
+
+
+</rewritten_selection_following_instructions>
+
