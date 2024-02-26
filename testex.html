@@ -23,6 +23,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <link rel="stylesheet" type="text/css" href="css/img.css">
+  <style>
+
+  .video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* Ratio 16:9 pour une vidéo responsive */
+}
+
+#myVideo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+  </style>
 </head>
 
 <body>
@@ -72,66 +86,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <li id="squa"></li>
   <li id="squa"></li>
 </ul>
+  
+<div class="video-container">
+  <video id="myVideo" controls>
+    <source src="chemin_vers_ta_vidéo.mp4" type="video/mp4">
+    Ton navigateur ne supporte pas la balise vidéo.
+  </video>
+</div>
+    
 
-    <div class="container dsf bcccc">
-<h2 class="mt-2">House Flipper 2</h2>
-<div class="row ">
-
-<div class="col-md-8 ">
-<img class="image-mobile" src="https://cdn.akamai.steamstatic.com/steam/apps/1190970/header.jpg?t=1702674942" alt="Image principale" width="100%">
-<video muted autoplay class="hide-on-mobile" controls width="100%">
-<source src="https://cdn.akamai.steamstatic.com/steam/apps/256988463/movie_max_vp9.webm?t=1702558812" type="video/webm">
-Votre navigateur ne supporte pas la vidéo.
-</video>
-<h4 class="mt-2">Merci de lire les DMCA</h4>
-<a target="_blank" href="https://www.clictune.com/hZ6a/?url=https%3A%2F%2F1fichier.com%2F%3Fgvnpdeyf0vpfwq8x7dbl"><button class="btnnnn">Download</button></a>
-<h4 class="mt-4 image-mobile">Information :</h4>
-<ul class=" image-mobile borderr">
-<li><strong>Avis général :</strong> Très positive</li>
-<li><strong>Crédit :</strong> Cracks.Source.None</li>
-<li><strong>Multijoueur :</strong> Non</li>
-<li><strong>Date de publication :</strong> 14 Dec, 2023</li>
-<li><strong>Développeur :</strong> Frozen District, Empyrean</li>
-<li><strong>Éditeur :</strong> Frozen District, PlayWay S.A.</li>
-<li><strong>Age :</strong> Pegi 0</li>
-</ul>
-<h4 class="mt-4">Courte Descritption :</h4>
-<h6>It's time to dust off your hammer - House Flipper is back in a brand-new fashion! Buy and renovate run-down houses! Or maybe you want to build new ones? Now you can! Start as a rookie Flipper and make a fortune by helping out the community of the charming town of Pinnacove.</h6>
-<h3 class="mt-5">Configuration système requise :</h3>
-<div class="row mt-1 borderr">
-<div class="col-md-6 ">
-<ul>
-<strong>Minimum:</strong><br><ul class="bb_ul"><li>Requires a 64-bit processor and operating system<br></li><li><strong>OS:</strong> Windows 10 64bit<br></li><li><strong>Processor:</strong> AMD Ryzen 5 1st gen / Intel Core i5 7th gen<br></li><li><strong>Memory:</strong> 8 GB RAM<br></li><li><strong>Graphics:</strong> AMD Radeon RX 580 4GB / NVIDIA GeForce GTX 1060 6GB<br></li><li><strong>DirectX:</strong> Version 11<br></li><li><strong>Storage:</strong> 6 GB available space</li></ul>
-</ul>
-</div>
-<div class="col-md-6">
-<ul>
-<strong>Recommended:</strong><br><ul class="bb_ul"><li>Requires a 64-bit processor and operating system<br></li><li><strong>OS:</strong> Windows 10 64bit or newer<br></li><li><strong>Processor:</strong> AMD Ryzen 5 3rd gen / Intel Core i5 10th gen<br></li><li><strong>Memory:</strong> 16 GB RAM<br></li><li><strong>Graphics:</strong> AMD Radeon RX 5700XT 8GB / NVIDIA RTX 2070 8GB<br></li><li><strong>DirectX:</strong> Version 11<br></li><li><strong>Storage:</strong> 6 GB available space</li></ul>
-</ul>
-</div>
-</div>
-</div>
-<div class="col-md-4 ">
-<div class="row ">
-<div class="col-12 mb-3">
-<img class="hide-on-mobile" src="https://cdn.akamai.steamstatic.com/steam/apps/1190970/header.jpg?t=1702674942" alt="Image principale" width="100%">
-</div>
-</div>
-<h5 class="hide-on-mobile">Information :</h5>
-<ul class="hide-on-mobile borderr">
-<li><strong>Crédit :</strong> P2P</li>
-<li><strong>Nombre de vues :</strong> 519</li>
-<li><strong>Multijoueur :</strong> Non</li>
-<li><strong>Date de publication :</strong> 14 Dec, 2023</li>
-<li><strong>Développeur :</strong> Frozen District, Empyrean</li>
-<li><strong>Éditeur :</strong> Frozen District, PlayWay S.A.</li>
-<li><strong>Age :</strong> Pegi 0</li>
-</ul>
-<h5 class="hide-on-mobile">Catégories:</h5>
-<ul class="hide-on-mobile borderr">
-<li>Simulation</li>
-<li>Casual</li>
-</ul>
 
   <footer>
     <div class="container">
@@ -150,7 +113,22 @@ Votre navigateur ne supporte pas la vidéo.
   <script src="js/script.js"></script>
 <script src="http://afarkas.github.io/lazysizes/lazysizes.min.js" async=""></script>
   <script src="js/img.js"></script>
+  <script>
+    window.addEventListener('resize', resizeVideo);
+
+function resizeVideo() {
+  var videoContainer = document.querySelector('.video-container');
+  var video = document.getElementById('myVideo');
   
+  var containerWidth = videoContainer.offsetWidth;
+  var videoHeight = containerWidth * 9 / 16; /* Ratio 16:9 pour une vidéo responsive */
+  
+  video.style.height = videoHeight + 'px';
+}
+
+// Appelle resizeVideo() lors du chargement de la page
+window.addEventListener('load', resizeVideo);
+  </script>
   <script>
     const date = new Date();
     const heure = date.getHours();
