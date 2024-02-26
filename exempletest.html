@@ -73,8 +73,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <li id="squa"></li>
 </ul>
 
-    <div class="trailer-iframe" id="video-container">
-        <video id="my-video" width="1000" height="560" controls>
+        <div class="trailer-iframe" id="video-container">
+        <video id="my-video" width="320" height="180" controls>
+            <source src="https://cdn.akamai.steamstatic.com/steam/apps/256995708/movie_max_vp9.webm?t=1706007224" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div id="video-popup">
+        <button id="video-close">Close</button>
+        <video id="popup-video" width="1000" height="560" controls>
             <source src="https://cdn.akamai.steamstatic.com/steam/apps/256995708/movie_max_vp9.webm?t=1706007224" type="video/mp4">
             Your browser does not support the video tag.
         </video>
@@ -102,7 +109,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script src="js/script.js"></script>
 <script src="http://afarkas.github.io/lazysizes/lazysizes.min.js" async=""></script>
   <script src="js/img.js"></script>
-  
+  <script>
+        const videoContainer = document.getElementById('video-container');
+        const videoPopup = document.getElementById('video-popup');
+        const popupVideo = document.getElementById('popup-video');
+        const videoClose = document.getElementById('video-close');
+
+        videoContainer.addEventListener('click', () => {
+            videoPopup.style.display = 'block';
+            popupVideo.play();
+        });
+
+        videoClose.addEventListener('click', () => {
+            videoPopup.style.display = 'none';
+            popupVideo.pause();
+        });
+    </script>
   <script>
     const date = new Date();
     const heure = date.getHours();
