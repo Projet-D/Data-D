@@ -97,20 +97,16 @@
 </ul>
 
     
-<input type="text" id="searchInput" placeholder="Search files...">
+<input type="text" id="searchInput" placeholder="Rechercher...">
 <div id="cardContainer">
-
-<!-- Insère ici tes cartes Bootstrap -->
- 
-<div class="card" style="width: 18rem;">
-<a href="https://www.example.com" target="_blank">
-<img src="img/logo.png" class="card-img-top" alt="Data D">
-</a>
-<div class="card-body">
-<h4 class="card-title">Cake au fruit</h4>
-</div>
-</div>
- 
+  <div class="card" style="width: 18rem;">
+    <a href="#" target="_blank">
+      <img src="image.jpg" class="card-img-top" alt="Image">
+    </a>
+    <div class="card-body">
+      <h4 class="card-title">Cake au fruit</h4>
+    </div>
+  </div>
 </div>
 
   
@@ -138,27 +134,24 @@
     <script src="js/script.js"></script>
     <script src="http://afarkas.github.io/lazysizes/lazysizes.min.js" async=""></script>
     <script>
+  const searchInput = document.getElementById('searchInput');
+  const cardContainer = document.getElementById('cardContainer');
+  const cards = cardContainer.getElementsByClassName('card');
 
-const searchInput =
-document.getElementById('searchInput'); const cardContainer =
-document.getElementById('cardContainer');
-const cards = cardContainer.getElementsByCl assName('card');
+  searchInput.addEventListener('input', function() {
+    const searchValue = searchInput.value.toLowerCase();
 
-searchInput.addEventListener('input', function() {
-const searchValue = searchInput.value.toLowerCase();
+    for (let i = 0; i < cards.length; i++) {
+      const cardTitle = cards[i].querySelector('.card-title').textContent.toLowerCase();
 
-for (let i = 0; i < cards.length; i++) {
-const cardTitle = cards[i].querySelector('.car d-title').textContent.toLowerCase();
-
-if (cardTitle.includes(searchValue)) {
-cards[i].style.display = 'block';
-} else {
-cards[i].style.display = 'none';
-}
-}
-});
-
-    </script>
+      if (cardTitle.includes(searchValue)) {
+        cards[i].style.display = 'block';
+      } else {
+        cards[i].style.display = 'none';
+      }
+    }
+  });
+</script> 
 <script>
   const date = new Date();
   const heure = date.getHours();
