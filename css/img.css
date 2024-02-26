@@ -1,0 +1,18 @@
+#video-container {
+    width: 640px;
+    height: 360px;
+    float: left;
+}
+
+#image-container {
+    float: left;
+    margin-left: 20px;
+}
+
+#image-container img {
+    width: 150px;
+    height: 100px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
