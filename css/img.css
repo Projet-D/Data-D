@@ -3,6 +3,7 @@
     height: 360px;
     float: left;
     left: 50px;
+    border-radius: 10px;
 }
 
 #image-container {
