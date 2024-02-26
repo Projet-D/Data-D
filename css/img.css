@@ -1,6 +1,6 @@
 #video-container {
-    width: 1000px;
-    height: 560px;
+    width: 640px;
+    height: 360px;
     float: left;
     left: 50px;
 }
