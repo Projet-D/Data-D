@@ -7,8 +7,8 @@ for (let i = 0; i < images.length; i++) {
         const img = document.createElement('img');
         img.src = this.src;
         img.alt = this.alt;
-        img.style.width = videoContainer.offsetWidth + 'px';
-        img.style.height = videoContainer.offsetHeight + 'px';
+        img.setAttribute('width', '1000');
+        img.setAttribute('height', '560');
         videoContainer.innerHTML = '';
         videoContainer.appendChild(img);
     });
