@@ -96,35 +96,22 @@
   <li id="squa"></li>
 </ul>
 
-    <div class="search">
-      <div class="search_byname"><h3>Looking for a file?</h3></div>
-      <div class="searchcontainer">
-        <input
-          class="searchforgames form-control"
-          type="text"
-          id="searchInput"
-          placeholder="Search.."
-        />
-    </div>
-  </div>
-<center> <p id="resultat"></p></center>
-<center><h3>Dead link, missing photo or a fil suggestion ? Fill the <a href="form.html">form</a>.</h3></center>
-<p>A large part of the games do not work, please report the game to have it.</p>
-  <div class="gamesAll">
-    <h2 class="category" id="logiciel__all">Fichiers</h2>
-    <div class="logiciels">
+    
+<input type="text" id="searchInput" placeholder="Search files...">
+<div id="cardContainer">
 
-      
-
+<!-- Insère ici tes cartes Bootstrap -->
+ 
 <div class="card" style="width: 18rem;">
 <a href="https://www.example.com" target="_blank">
-<img src="img/logo.png" class="card-img-top" alt="Image">
-<div class="card-body">
-<h4 class="card-title">Titre</h4>
-</div>
+<img src="img/logo.png" class="card-img-top" alt="Data D">
 </a>
+<div class="card-body">
+<h4 class="card-title">Cake au fruit</h4>
 </div>
-
+</div>
+ 
+</div>
 
   
       
@@ -150,26 +137,28 @@
     <script src="code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/script.js"></script>
     <script src="http://afarkas.github.io/lazysizes/lazysizes.min.js" async=""></script>
-    
-<script>
-  function openModal(gameName, gameUrl) {
-    $("#modal-" + gameName.replace(/\s+/g, "").replace(/[^\w\s]/gi, "")).modal("show");
-  }
+    <script>
 
-  function closeModal(gameName) {
-    $("#modal-" + gameName.replace(/\s+/g, "").replace(/[^\w\s]/gi, "")).modal("hide");
-  }
-</script>
+const searchInput =
+document.getElementById('searchInput'); const cardContainer =
+document.getElementById('cardContainer');
+const cards = cardContainer.getElementsByCl assName('card');
 
-<script>
-  function openModal(gameName, gameUrl) {
-    $("#modal-" + gameName.replace(/\s+/g, "").replace(/[^\w\s]/gi, "")).modal("show");
-  }
+searchInput.addEventListener('input', function() {
+const searchValue = searchInput.value.toLowerCase();
 
-  function closeModal(gameName) {
-    $("#modal-" + gameName.replace(/\s+/g, "").replace(/[^\w\s]/gi, "")).modal("hide");
-  }
-</script>
+for (let i = 0; i < cards.length; i++) {
+const cardTitle = cards[i].querySelector('.car d-title').textContent.toLowerCase();
+
+if (cardTitle.includes(searchValue)) {
+cards[i].style.display = 'block';
+} else {
+cards[i].style.display = 'none';
+}
+}
+});
+
+    </script>
 <script>
   const date = new Date();
   const heure = date.getHours();
