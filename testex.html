@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Data D / Projet D</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Discover a treasure trove of files with our powerful file seeker! Find ROMs, useful software, games, and more. Unleash the ultimate file-hunting experience!" />
+  <meta name="keywords" content="Jeux, Data D, Data, D, Fichiers, chercheur, chercheur de fichiers, films, logiciels, photo, tuto, Projet D, Projet, musiques, code, source, code source, support, a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z" />
+  <meta name="author" content="Data D" />
+  <meta name="title" content="Data D" />
+  <meta name="theme-color" content="#00060a"/>
+  <link rel="icon" href="img/logo1.png" />
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-THHCPRW3');</script>
+<!-- End Google Tag Manager -->
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/img.css">
+</head>
+
+<body>
+  
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-THHCPRW3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img class="navbar-img" src="img/logo.png" alt="logo" width="130" height="80" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Projet D</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="files.html">Files</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="form.html">Form</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <!-- Vous pouvez ajouter ici d'autres éléments de navigation si nécessaire -->
+        </form>
+      </div>
+    </div>
+  </nav>
+  
+  <div id="loader"></div>
+  <ul class="square">
+  <li id="squa"></li>
+  <li id="squa"></li>
+  <li id="squa"></li>
+  <li id="squa"></li>
+  <li id="squa"></li>
+  <li id="squa"></li>
+  <li id="squa"></li>
+  <li id="squa"></li>
+  <li id="squa"></li>
+  <li id="squa"></li>
+</ul>
+
+    <div class="trailer-iframe" id="video-container">
+        <video id="my-video" width="1000" height="560" controls>
+            <source src="https://cdn.akamai.steamstatic.com/steam/apps/256995708/movie_max_vp9.webm?t=1706007224" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="img-trailer" id="image-container">
+        <img id="image-1" src="https://cdn.akamai.steamstatic.com/steam/apps/1623730/header.jpg?t=1705389219" alt="Image 1"><br><br>
+        <img id="image-2" src="https://cdn.akamai.steamstatic.com/steam/apps/1623730/header.jpg?t=1705389219" alt="Image 2"><br><br>
+        <img id="image-3" src="https://cdn.akamai.steamstatic.com/steam/apps/1623730/header.jpg?t=1705389219" alt="Image 3">
+    </div>
+<div class="descr">
+  <div class="centre"><h4>Titre</h4></div>
+  <li><p>Lorem ipsum dolor sit amet, consectetur<br> 
+    adipiscing elit, sed do eiusmod tempor<br>
+    incididunt ut labore et dolore magna</p></li>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>Heure actuelle : <span id="heureActuelle"></span></p>
+          <h5>Data D | Tout droit doit être réservé.</h5>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/15198d5ddf.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/script.js"></script>
+<script src="http://afarkas.github.io/lazysizes/lazysizes.min.js" async=""></script>
+  <script src="js/img.js"></script>
+  
+  <script>
+    const date = new Date();
+    const heure = date.getHours();
+    const minutes = date.getMinutes();
+    const heureActuelle = heure + ":" + minutes;
+    document.getElementById("heureActuelle").textContent = heureActuelle;
+
+    fetch('https://api.ipgeolocation.io/ipgeo?apiKey=2f62041d1a514dabaebfe5a67fa8ad97')
+      .then(response => response.json())
+      .then(data => {
+        const pays = data.country_name;
+        document.getElementById("pays").textContent = pays;
+      });
+  </script>
+</body>
+</html>
