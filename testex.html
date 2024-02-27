@@ -39,43 +39,33 @@ video {
 				margin-right: 500px;
 				max-width: 70%;
 				border-radius: 10px;
-			* {
-    box-sizing: border-box;
+			.img-trailer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-}
-
-.img-trailer {
-    text-align: right;
+.img-trailer img {
+    border-radius: 10px;
 }
 
 @media screen and (max-width: 768px) {
     .img-trailer {
+        position: initial;
         text-align: center;
         padding: 10px;
     }
 
     .img-trailer img {
-        border-radius: 10px;
         max-width: 100%;
         height: auto;
+        border-radius: 10px;
     }
 }
 
-.img-trailer img {
-    display: inline-block;
-    border-radius: 10px;
-    vertical-align: top;
-}
-
 @media screen and (min-width: 1024px) {
-    .img-trailer {
-        position: absolute;
-        top: 10px;
-        right: 10px;
+    .img-trailer img {
+        width: 500px;
     }
 }
     
