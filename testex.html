@@ -53,7 +53,7 @@ video {
   .img-trailer {
     position: absolute;
     right: 40px;
-	  left: 1500px;
+	  left: 1300px;
     top: 210px;
     max-width: 70%;
     border-radius: 10px;
@@ -61,13 +61,33 @@ video {
   } <!-- Vous pouvez ajouter ici d'autres éléments de navigation si nécessaire -->
 	
 .descr {
-  position: absolute;
-  top: 20px;
-  right: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
   border-radius: 10px;
-  background: #73AD21;
-  z-index: 1;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 150%;
+  height: auto;
 }
+
+.descr p {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .descr {
+    position: absolute;
+right: 40px;
+	  left: 1300px;
+    top: 210px;
+    max-width: 70%;
+    z-index: 1;
+  }
+
 }
     
  </style>
