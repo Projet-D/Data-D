@@ -24,17 +24,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <link rel="stylesheet" type="text/css" href="css/img.css">
   <style>
-
+    
 .video-container {
   position: relative;
-  width: 100%;
+  width: 80%; /* Ajuste cette valeur pour réduire la largeur de la vidéo */
+  max-width: 100%; /* Assure-toi que la vidéo ne dépasse pas la largeur de son conteneur */
+  margin: 0 auto; /* Centre la vidéo horizontalement */
   padding-bottom: 56.25%; /* Ratio 16:9 pour une vidéo responsive */
 }
 
 @media screen and (min-width: 768px) {
   .video-container {
     margin-left: 20px; /* Petit espace à gauche de la vidéo pour les écrans plus larges */
-    margin-right: 100px; /* Grand espace à droite de la vidéo pour les écrans plus larges */
+    padding-right: 100px; /* Grand espace à droite de la vidéo pour les écrans plus larges */
   }
 }
   </style>
