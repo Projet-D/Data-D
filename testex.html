@@ -49,10 +49,12 @@ video {
   border-radius: 10px;
 }
 
-	  @media (max-width: 768px) {
-.img-trailer {
-vertical-align: middle;
-} 
+@media only screen and (max-width: 767px) {
+  .img-trailer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 @media (min-width: 768px) {
   .img-trailer {
