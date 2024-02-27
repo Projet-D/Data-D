@@ -48,9 +48,14 @@ video {
   margin: 0 auto;
   border-radius: 10px;
 }
-
+	  
+@media only screen and (min-width: 768px) {
+  .centre-img {
+    display: none;
+  }
+	
 @media only screen and (max-width: 767px) {
-  .img-trailer {
+  .centre-img {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -164,7 +169,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		Your browser does not support the video tag.
   </video>
 	<div class="title-trailer"><h1>House flipper 2</h1></div>
-    <img src="https://cdn.akamai.steamstatic.com/steam/apps/1190970/header.jpg?t=1702674942" class="img-trailer">
+    <img src="https://cdn.akamai.steamstatic.com/steam/apps/1190970/header.jpg?t=1702674942" class="img-trailer centre-img">
 
 	<div class="descrun">
   <div class="centre"><h4>Titre</h4></div>
