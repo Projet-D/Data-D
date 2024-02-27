@@ -26,14 +26,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <style>
     
 .video-container {
-  position: relative;
-  padding-bottom: 30%; /* Ratio 16:9 pour une vidéo responsive */
+  width: 80%; /* Ajuste cette valeur pour définir la taille de la vidéo */
+  margin: 0 auto; /* Centre la vidéo horizontalement */
 }
 
 @media screen and (min-width: 768px) {
   .video-container {
-    margin-left: 20px; /* Petit espace à gauche de la vidéo pour les écrans plus larges */
-    padding-right: 100px; /* Grand espace à droite de la vidéo pour les écrans plus larges */
+    width: 60%; /* Ajuste cette valeur pour définir la taille de la vidéo sur les écrans plus larges */
+    margin-left: auto; /* Centre la vidéo horizontalement en laissant un espace à gauche */
+    margin-right: auto; /* Centre la vidéo horizontalement en laissant un espace à droite */
   }
 }
   </style>
