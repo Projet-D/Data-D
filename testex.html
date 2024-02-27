@@ -26,17 +26,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <style>
     
 .video-container {
-  width: 100%; /* La vidéo prendra toute la largeur de l'écran par défaut */
-  margin: 0; /* Supprime les marges par défaut */
-
-  /* Ajoute une marge à gauche et à droite pour les écrans plus grands */
-  padding-left: 20px;
-  padding-right: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .video-container {
-    padding: 0; /* Supprime les marges pour les petits écrans */
+    width: calc(100% - 120px);
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 100px;
   }
 }
   </style>
