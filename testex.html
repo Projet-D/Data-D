@@ -47,6 +47,7 @@ video {
 
 .img-trailer img {
     border-radius: 10px;
+    width: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -64,8 +65,15 @@ video {
 }
 
 @media screen and (min-width: 1024px) {
+    .img-trailer {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+    }
+
     .img-trailer img {
         width: 500px;
+        height: auto;
     }
 }
     
