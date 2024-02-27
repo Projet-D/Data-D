@@ -68,7 +68,9 @@ video {
   margin: 0 auto;
   width: 200px; /* Modifier cette valeur pour ajuster la largeur */
   height: 150px; /* Modifier cette valeur pour ajuster la hauteur */
-  word-wrap: break-word; /* Ajoute cette ligne pour permettre le retour à la ligne du texte */
+  white-space: nowrap; /* Ajoute cette ligne pour empêcher le retour à la ligne du texte */
+  overflow: hidden; /* Ajoute cette ligne pour masquer le texte qui dépasse */
+  text-overflow: ellipsis; /* Ajoute cette ligne pour afficher des points de suspension lorsque le texte dépasse */
 }
 
 .descr p {
@@ -85,6 +87,7 @@ video {
     max-width: 70%;
     z-index: 1;
   }
+
 
 
 
