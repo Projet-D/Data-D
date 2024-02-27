@@ -61,29 +61,34 @@ video {
   } <!-- Vous pouvez ajouter ici d'autres éléments de navigation si nécessaire -->
 	
 .descr {
-  display: inline-block;
+  display: flex;
   background-color: green;
   border-radius: 10px;
-  padding: 10px;
+  padding: 20px; /* adjust padding to taste */
   margin: 0 auto;
-  max-width: fit-content;
+  max-width: 150%;
+  height: auto; /* allow height to adjust based on content */
+  position: absolute;
+  top: 50%; /* center vertically */
+  left: 50%; /* center horizontally */
+  transform: translate(-50%, -50%); /* center horizontally and vertically */
 }
 
 .descr p {
   color: white;
   font-size: 20px;
+  margin: 0; /* remove default margin from p element */
 }
 
 @media (min-width: 768px) {
   .descr {
-    position: absolute;
-    right: 40px;
     left: 1400px;
     top: 550px;
     max-width: 70%;
     z-index: 1;
   }
-}
+
+
 	@media (min-width: 768px) {
 	.title-trailer {
 		position: absolute;
