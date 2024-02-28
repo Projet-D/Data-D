@@ -96,28 +96,17 @@ right: 150px;
 		top: 200px;
 		text-align: center;
 
+.buttonun {
+  width: 460px; /* Tu peux ajuster la valeur en fonction de la longueur souhaitée */
+}
+        @media (min-width: 768px) {
   .buttonun {
-    width: 460px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+position: absolute;
+    right: 40px;
+    top: 750px;
+    max-width: 70%;
+    z-index: 1;
   }
-
-  @media (max-width: 767px) {
-    .buttonun {
-      width: 100%;
-      left: 50%; /* Add this line */
-      transform: translateX(-50%); /* Add this line */
-    }
-  @media (min-width: 768px) {
-    .buttonun {
-      position: absolute;
-      right: 40px;
-      top: 750px;
-      max-width: 70%;
-      z-index: 1;
-
-    }
 
   
   }
