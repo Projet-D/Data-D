@@ -96,8 +96,6 @@ right: 150px;
 		top: 200px;
 		text-align: center;
 
-}
-
   .buttonun {
     width: 460px;
     display: flex;
@@ -108,9 +106,9 @@ right: 150px;
   @media (max-width: 767px) {
     .buttonun {
       width: 100%;
+      left: 50%; /* Add this line */
+      transform: translateX(-50%); /* Add this line */
     }
-  }
-
   @media (min-width: 768px) {
     .buttonun {
       position: absolute;
@@ -118,7 +116,10 @@ right: 150px;
       top: 750px;
       max-width: 70%;
       z-index: 1;
+
     }
+
+  
   }
     
  </style>
