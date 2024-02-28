@@ -97,21 +97,27 @@ right: 150px;
 		text-align: center;
 
 }
-		.buttonun {
-  width: 460px; /* Tu peux ajuster la valeur en fonction de la longueur souhaitée */
-}
-		@media (min-width: 768px) {
+
   .buttonun {
-position: absolute;
-    right: 40px;
-    top: 750px;
-    max-width: 70%;
-    z-index: 1;
+    width: 460px; /* Keep the width for larger screens */
+    text-align: center; /* Center the text */
+    display: block; /* Make the button a block element */
   }
-					@media (max-width: 767px) {
-  .buttonun {
-width: 460px;
+
+  @media (max-width: 767px) {
+    .buttonun {
+      width: 100%; /* Make the button take up the full width on smaller screens */
+    }
   }
+
+  @media (min-width: 768px) {
+    .buttonun {
+      position: absolute;
+      right: 40px;
+      top: 750px;
+      max-width: 70%;
+      z-index: 1;
+    }
 	}
     
  </style>
@@ -182,6 +188,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<button class="buttonun btn btn-primary btn-outline animate shake">Download</button>
 </a> 
 	<br>
+<br>
+		<br>
+<br>
+		<br>
 <br>
 
   <footer>
