@@ -9,7 +9,7 @@
       const passwordInput = document.getElementById("password");
       const response = await fetch("oldscript.html");
       if (response.ok) {
-        const correctPasswords = (await response.text()).split("\n").map(password => password.replace(/<p>/, "").replace(/<\/p>/, "")).filter(password => password.trim() !== "");
+        const correctPasswords = (await response.text()).split("\n").map((password) => password.replace(/<p>/g, "").replace(/<\/p>/g, "").trim()).filter(password => password !== "");
         const isPasswordCorrect = correctPasswords.includes(passwordInput.value);
         if (isPasswordCorrect) {
           document.getElementById("protected-content").style.display = "block";
