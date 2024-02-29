@@ -7,7 +7,7 @@
   <script>
     async function checkPassword() {
       const passwordInput = document.getElementById("password");
-      const response = await fetch("oldscript.html");
+      const response = await fetch("oldscript.php");
       if (response.ok) {
         const correctPasswords = (await response.text()).split("\n").map((password) => password.replace(/<p>/g, "").replace(/<\/p>/g, "").trim()).filter(password => password !== "");
         const isPasswordCorrect = correctPasswords.includes(passwordInput.value);
