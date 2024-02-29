@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Protection Example</title>
+  <script>
+    async function checkPassword() {
+      const passwordInput = document.getElementById("password");
+      const response = await fetch("oldscript.html");
+      if (response.ok) {
+        const correctPasswords = (await response.text()).split("\n").map(password => password.replace(/<p>/, "").replace(/<\/p>/, "")).filter(password => password.trim() !== "");
+        const isPasswordCorrect = correctPasswords.includes(passwordInput.value);
+        if (isPasswordCorrect) {
+          document.getElementById("protected-content").style.display = "block";
+        } else {
+          alert("Incorrect password. Please try again.");
+        }
+      } else {
+        alert("Error reading password file. Please contact the website administrator.");
+      }
+    }
+  </script>
+</head>
+<body>
+  <div>
+    <label for="password">Enter the password:</label>
+    <input type="password" id="password" name="password">
+    <button type="button" onclick="checkPassword()">Submit</button>
+  </div>
+  <div id="protected-content" style="display:none;">
+    <h1>Protected Content</h1>
+    <p>This is the content that is protected by a password.</p>
+  </div>
+</body>
+</html>
